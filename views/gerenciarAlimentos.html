@@ -59,8 +59,12 @@
               <h2>Gerenciar Alimentos</h2>
             </div>
             <div class="panel-row">
-              <button class="panel panel-50" a-view="cadastrarAlimentos" onclick="fetchContent(this)" a-folder="alimentos">Cadastrar Refeição</button>
-              <button class="panel panel-50" a-view="visualizarAlimentos" onclick="fetchContent(this)" a-folder="alimentos">Visualizar Refeição</button>       
+              <button class="panel panel-50" a-view="cadastrarAlimentos" onclick="fetchContent(this)" a-folder="alimentos">
+                <i class="fas fa-plus-circle"></i>
+                Cadastrar Refeição</button>
+              <button class="panel panel-50" a-view="visualizarAlimentos" onclick="fetchContent(this)" a-folder="alimentos">
+                <i class="fas fa-table"></i>
+                Visualizar Refeição</button>       
             </div>
             <div class="content" id="ajax-content">
             </div>

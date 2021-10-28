@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css" />
     <title>Health Track</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="flex-dashboard">
       <sidebar>
         <div class="sidebar-title">
-          <img src="../images/heartbeat.png">
+          <img src="../images/heartbeat.png" />
           <h2>Health Track</h2>
         </div>
         <div class="menu">
@@ -24,7 +24,7 @@
             </li>
             <li>
               <i class="fas fa-user"></i>
-              <a href="perfil.html">  Perfil</a>
+              <a href="perfil.html"> Perfil</a>
             </li>
             <li>
               <i class="fas fa-balance-scale"></i>
@@ -36,44 +36,57 @@
             </li>
             <li>
               <i class="fas fa-volleyball-ball"></i>
-              <a href="gerenciarAtividades.html">  Atividade física</a>
+              <a href="gerenciarAtividades.html"> Atividade física</a>
             </li>
             <li>
               <i class="fas fa-utensils"></i>
-              <a href="gerenciarAlimentos.html">  Alimentos</a>
+              <a href="gerenciarAlimentos.html"> Alimentos</a>
             </li>
             <li>
               <i class="fas fa-calculator"></i>
-              <a href="imc.html"> Calcular IMC</a>
-            </li>  
+              <a href="calcularIMC.html"> Calcular IMC</a>
+            </li>
           </ul>
         </div>
       </sidebar>
       <main>
-          <header>
-            <a href="dashboard.html" ><i class="fas fa-home"></i> Dashboard</a>
-            <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
-          </header>
-          <div class="main-content">
-            <div class="main-content-title">
-              <h2>Gerenciar pressao</h2>
-            </div>
-            <div class="panel-row">
-              <button class="panel panel-50" a-view="cadastrarPressao" onclick="fetchContent(this)" a-folder="pressao">
-                <i class="fas fa-plus-circle"></i>
-                Cadastrar Pressão Arterial</button>
-              <button class="panel panel-50" a-view="visualizarPressao" onclick="fetchContent(this)" a-folder="pressao">
-                <i class="fas fa-table"></i>
-                Visualizar Pressão Arterial</button>       
-            </div>
-            <div class="content" id="ajax-content">
-            </div>
+        <header>
+          <a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+          <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </header>
+        <div class="main-content">
+          <div class="main-content-title">
+            <h2>Gerenciar pressao</h2>
           </div>
+          <div class="panel-row">
+            <button
+              class="panel panel-50"
+              a-view="cadastrarPressao"
+              onclick="fetchContent(this)"
+              a-folder="pressao"
+            >
+              <i class="fas fa-plus-circle"></i>
+              Cadastrar Pressão Arterial
+            </button>
+            <button
+              class="panel panel-50"
+              a-view="visualizarPressao"
+              onclick="fetchContent(this)"
+              a-folder="pressao"
+            >
+              <i class="fas fa-table"></i>
+              Visualizar Pressão Arterial
+            </button>
+          </div>
+          <div class="content" id="ajax-content"></div>
+        </div>
       </main>
     </div>
-    <script sr="../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script
+      sr="../plugins/bootstrap/js/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
     <script src="../plugins/fontawesome/js/all.min.js"></script>
     <script src="../js/ajax.js"></script>
-</body>
-
+  </body>
 </html>

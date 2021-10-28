@@ -38,11 +38,11 @@
               <i class="fas fa-volleyball-ball"></i>
               <a href="gerenciarAtividades.html"> Atividade física</a>
             </li>
-            <li class="selected">
+            <li>
               <i class="fas fa-utensils"></i>
               <a href="gerenciarAlimentos.html"> Alimentos</a>
             </li>
-            <li>
+            <li class="selected">
               <i class="fas fa-calculator"></i>
               <a href="calcularIMC.html"> Calcular IMC</a>
             </li>
@@ -55,35 +55,16 @@
           <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </header>
         <div class="main-content">
-          <div class="main-content-title">
-            <h2>Gerenciar Alimentos</h2>
+          <div class="imc-parent">
+            <div class="imc">
+              <h2>Seu IMC é <span>19,5</span> - <span>Normal</span></h2>
+            </div>
           </div>
-          <div class="panel-row">
-            <button
-              class="panel panel-50"
-              a-view="cadastrarAlimentos"
-              onclick="fetchContent(this)"
-              a-folder="alimentos"
-            >
-              <i class="fas fa-plus-circle"></i>
-              Cadastrar Refeição
-            </button>
-            <button
-              class="panel panel-50"
-              a-view="visualizarAlimentos"
-              onclick="fetchContent(this)"
-              a-folder="alimentos"
-            >
-              <i class="fas fa-table"></i>
-              Visualizar Refeição
-            </button>
-          </div>
-          <div class="content" id="ajax-content"></div>
         </div>
       </main>
     </div>
     <script
-      sr="../plugins/bootstrap/js/bootstrap.min.js"
+      src="../plugins/bootstrap/js/bootstrap.min.js"
       type="text/javascript"
     ></script>
     <script src="../plugins/fontawesome/js/all.min.js"></script>
